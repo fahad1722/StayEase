@@ -12,6 +12,8 @@ It supports:
 
 ## API Documentation
 
+**Access at:** https://stayease-w3h3.onrender.com/swagger-ui/index.html
+
 ### Swagger UI Screenshots
 
 ![Swagger UI - Page 1](docs/images/Swagger-1.png)
@@ -66,9 +68,19 @@ src/main/java/com/fahad/stayease
     └── service
 ```
 
-## End-to-End Sequence Diagram
+## Sequence Phases
 
-![StayEase End-to-End Sequence Diagram](docs/images/StayEase.drawio.svg)
+**Phase 1: User Registration & Authentication**
+![Sequence Phase 1](docs/images/stayease-sequence-phase-1.svg)
+
+**Phase 2: Property Listing & Management**
+![Sequence Phase 2](docs/images/stayease-sequence-phase-2.svg)
+
+**Phase 3: Booking & Reservation**
+![Sequence Phase 3](docs/images/stayease-sequence-phase-3.svg)
+
+**Phase 4: Review & Feedback**
+![Sequence Phase 4](docs/images/stayease-sequence-phase-4.svg)
 
 ## Business Rules Implemented
 
