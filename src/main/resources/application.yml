@@ -23,6 +23,8 @@ app:
     secret: ${JWT_SECRET:super-secret-key-that-should-be-at-least-256-bits-long-change-in-prod}
     access-token-expiration-ms: 900000
     refresh-token-expiration-ms: 604800000
+  cors:
+    allowed-origins: ${CORS_ORIGINS:http://localhost:5173}
 
 info:
   app:
