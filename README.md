@@ -10,6 +10,14 @@ It supports:
 - Review restrictions based on completed stays
 - OpenAPI/Swagger documentation
 
+## API Documentation
+
+### Swagger UI Screenshots
+
+![Swagger UI - Page 1](docs/images/Swagger-1.png)
+
+![Swagger UI - Page 2](docs/images/Swagger-2.png)
+
 ## Tech Stack
 
 - Java 17
@@ -60,7 +68,7 @@ src/main/java/com/fahad/stayease
 
 ## End-to-End Sequence Diagram
 
-![StayEase End-to-End Sequence Diagram](docs/images/stayease-sequence-diagram.png)
+![StayEase End-to-End Sequence Diagram](docs/images/StayEase.drawio.svg)
 
 ## Business Rules Implemented
 
@@ -104,14 +112,6 @@ On successful startup, console prints:
 
 - Swagger UI: `http://localhost:8080/swagger-ui.html`
 - OpenAPI JSON: `http://localhost:8080/v3/api-docs`
-
-## API Documentation
-
-### Swagger UI Screenshots
-
-![Swagger UI - Page 1](docs/images/Swagger-1.png)
-
-![Swagger UI - Page 2](docs/images/Swagger-2.png)
 
 ## Build Jar
 
