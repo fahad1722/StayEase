@@ -26,7 +26,7 @@ It supports:
 - Spring Boot 3.3.5
 - Spring Security 6 + JWT
 - Spring Data JPA + Hibernate
-- MySQL 8
+- PostgreSQL
 - Springdoc OpenAPI 2.6.0
 - Maven
 
@@ -96,7 +96,7 @@ src/main/java/com/fahad/stayease
 
 - JDK 17+
 - Maven 3.9+
-- MySQL (local or cloud)
+- PostgreSQL (local or cloud)
 
 ## Configuration
 
@@ -107,15 +107,16 @@ Application configuration is in `src/main/resources/application.yml` and is envi
 | Variable | Default | Description |
 |---|---|---|
 | `PORT` | `8080` | App HTTP port |
-| `SPRING_DATASOURCE_URL` | `jdbc:mysql://localhost:3306/stayease?createDatabaseIfNotExist=true&sslMode=DISABLED&serverTimezone=UTC` | JDBC URL |
-| `SPRING_DATASOURCE_USERNAME` | `root` | DB username |
-| `SPRING_DATASOURCE_PASSWORD` | `root` | DB password |
-| `SPRING_DATASOURCE_DRIVER_CLASS_NAME` | `com.mysql.cj.jdbc.Driver` | JDBC driver |
+| `SPRING_DATASOURCE_URL` | `jdbc:postgresql://localhost:5432/stayease` | JDBC URL |
+| `SPRING_DATASOURCE_USERNAME` | `postgres` | DB username |
+| `SPRING_DATASOURCE_PASSWORD` | `postgres` | DB password |
+| `SPRING_DATASOURCE_DRIVER_CLASS_NAME` | `org.postgresql.Driver` | JDBC driver |
 | `JWT_SECRET` | fallback value in config | JWT signing secret |
 
 ## Run Locally
 
 ```bash
+createdb stayease
 mvn clean compile
 mvn spring-boot:run
 ```
